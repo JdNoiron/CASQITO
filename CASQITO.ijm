@@ -168,7 +168,8 @@ if (ThreshMeth > 1) {
    		run("Bio-Formats Importer", "open=[imageAdress] autoscale color_mode=Default rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT series_"+d2s(j,0));
    		fileNamej = "Series " + j;
 		getDimensions(width, height, channels, slices, frames);
-		setTool("freehand");
+		
+setTool("freehand");
 		
 		if (slices > 1) {
 			rename("Stack");
@@ -501,7 +502,8 @@ for (i=SerieD; i<=SerieF; i++) {
 	run("Bio-Formats Importer", "open=[imageAdress] autoscale color_mode=Default rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT series_"+d2s(i,0));
 	fileNamei = "Series " + i;
 	getDimensions(width, height, channels, slices, frames);
-	setTool("freehand");
+
+	setTool("freehand");
 	
 	
 	if (ThreshMeth == 2) {
@@ -839,20 +841,8 @@ if (ThreshMeth == 0) {
 		IJ.renameResults("Summary");
 
  	 	} 
-print("\nAnalysis done with CASQITO macro v17 by Juliette de Noiron, June 2021, under GNU Licence v3");
+print("\nAnalysis done with CASQITO macro v17 by Juliette de Noiron, June 2021, under GNU License v3");
 
 selectWindow("Log");
 saveAs("Text", imageDirectory + "Log_" + projectName + " _ " + year + "y " + day + "d " + month + "m " + hour + "h" + min + ".txt");	
 run("Close All");
-
-// v6 adding of settool("free hand"); & call("ij.plugin.frame.ThresholdAdjuster.setMode", "Red");
-// v7 adding message at the end of the log file to remember which version of the macro was used and adding a window allowing user to take an image out of the analysis
-// v8 adding date & time in the saving file name to be able to save several files of the same series in the same folder without erasing previous versions
-// v9 adding a threshold parameter
-// v10 adding a median filtering of the stacks
-// v11 adding many datas in the log file and new choices at the beginning, improving translation, replacing "max intensity" by "average intensity" for the Z projection
-// v12 adding a way to record threshold value in Part I
-// v13 changing area for Analyze particles
-// v14 adding algorithms
-// v16 adding zone selection overlay 
-// v17 adding licence header
