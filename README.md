@@ -2,16 +2,16 @@
 Computer Assisted Signal Quantification Including Threshold Options
 
 
-This Fiji macro is under GPL copyright.
+This Fiji macro is under GPL license.
 This macro workflow is detailed in 
 
 # Prerequisites:
-CASQITO runs on Fiji  and only treat .lif files of stacks images.
+CASQITO runs on Fiji and only treat .lif files of stacks images.
 
 # Install & Launch:
 1. Download CASQITO macro
 2. Start Fiji
-3. On Fiji, follow "Plugins" > "Macro" > "Run" find and select "CASQITO.ijm" file. Alternatively, drag and drop "CASQITO.ijm" file on fiji and click "run".
+3. On Fiji, follow "Plugins" > "Macro" > "Run" find and select "CASQITO.ijm" file. Alternatively, drag and drop "CASQITO.ijm" file on Fiji and click "run".
 4. Follow the instructions step by step. 
 
 # Outputs: 
