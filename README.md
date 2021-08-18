@@ -3,7 +3,7 @@ Computer Assisted Signal Quantification Including Threshold Options
 
 
 This Fiji macro is under GPL license.
-This macro workflow is detailed in 
+This macro workflow is detailed in "Apoptosis quantification in tissue: development of a semi automatic protocol and assessment of critical steps of image processing"
 
 # Prerequisites:
 CASQITO runs on Fiji and only treat .lif files of stacks images.
@@ -26,3 +26,6 @@ CASQITO can output up to 4 types of files
 . Several .png pictures displaying ROIs determined for zone selection 
 
 # Citation:
+
+Juliette de Noiron, Marion Hoareau, Jessie Colin, Isabelle Guénal. Apoptosis quantification in tissue:
+development of a semi automatic protocol and assessment of critical steps of image processing. 2021. hal-03297234
